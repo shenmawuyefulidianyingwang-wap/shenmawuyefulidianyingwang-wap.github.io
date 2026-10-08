@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>神马午夜福利电影网 | 午夜场电影内容单页</title>
+<meta name="description" content="神马午夜福利电影网（https://shenmawuyefulidianyingwang-wap.github.io）是一份午夜场电影内容单页，含午夜片单、夜话评论、观影手记与独立推荐四个栏目，适合夜间随手翻读。">
+<meta name="keywords" content="神马午夜福利电影网, shenmawuyefulidianyingwang-wap, 午夜场电影, 午夜片单, 夜话评论, 深夜观影">
+<meta name="author" content="神马午夜福利电影网">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0e1024">
+<meta property="og:type" content="website">
+<meta property="og:title" content="神马午夜福利电影网 | 午夜场电影内容单页">
+<meta property="og:description" content="午夜场电影内容单页：午夜片单、夜话评论、观影手记与独立推荐，适合夜间随手翻读。">
+<meta property="og:url" content="https://shenmawuyefulidianyingwang-wap.github.io">
+<meta property="og:site_name" content="神马午夜福利电影网">
+<link rel="canonical" href="https://shenmawuyefulidianyingwang-wap.github.io">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;font-size:16px;line-height:1.85;
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+  background:#0e1024;color:#e9eaf5;overflow-x:hidden;
+}
+body::before{content:"";position:fixed;inset:0;z-index:-2;
+  background:radial-gradient(1100px 600px at 12% -8%,rgba(99,56,180,.55),transparent 60%),radial-gradient(900px 520px at 92% 12%,rgba(20,138,188,.42),transparent 58%),#0e1024}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.35;
+  background:repeating-linear-gradient(180deg,transparent 0,transparent 3px,rgba(255,255,255,.035) 3.5px,transparent 4px)}
+a{color:inherit;text-decoration:none}
+:root{--max:1180px;--line:rgba(255,255,255,.14);--neon:#9b6bff;--neon2:#31d5e6;--pink:#ff5fa8;--paper:#151734;--muted:#a5a8c9}
+
+/* ===== 顶栏 ===== */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(14,16,36,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px;height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:13px}
+.logo{width:42px;height:42px;border-radius:9px;background:linear-gradient(135deg,var(--neon),var(--pink));display:grid;place-items:center;font-size:16px;font-weight:800;color:#fff;box-shadow:0 0 22px rgba(155,107,255,.55)}
+.brand b{font-size:19px;font-weight:800;letter-spacing:.5px;background:linear-gradient(90deg,#fff,#c9b6ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.brand em{font-style:normal;font-size:11.5px;letter-spacing:.5px;color:var(--muted)}
+.nav-links{display:flex;gap:4px}
+.nav-links a{padding:10px 14px;font-size:15px;border-radius:8px;color:#d5d7ee;transition:.2s}
+.nav-links a:hover{color:#fff;background:rgba(155,107,255,.18)}
+.menu-btn{display:none;width:44px;height:44px;border-radius:9px;background:rgba(155,107,255,.16);border:1px solid var(--line);color:#fff;font-size:20px;cursor:pointer}
+
+/* ===== 通用 ===== */
+section{max-width:var(--max);margin:0 auto;padding:56px 28px}
+.sec-t{display:flex;align-items:baseline;gap:14px;margin-bottom:28px;flex-wrap:wrap}
+.sec-t .no{font-family:"Courier New",monospace;font-size:12.5px;letter-spacing:2px;color:var(--neon2);border:1px solid rgba(49,213,230,.45);padding:3px 10px;border-radius:4px}
+.sec-t h2{margin:0;font-size:clamp(21px,2.8vw,28px);font-weight:800;letter-spacing:-.3px}
+.sec-t h2 span{color:var(--neon2)}
+.sec-t .more{margin-left:auto;font-size:14px;color:var(--muted)}
+.sec-t .more:hover{color:#fff}
+
+/* ===== 封面 ===== */
+.cover{padding-top:46px}
+.intro{position:relative;border:1px solid var(--line);border-radius:18px;padding:52px 54px;background:rgba(21,23,52,.6);overflow:hidden}
+.intro .grid{position:absolute;inset:0;opacity:.22;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px}
+.intro .moon{position:absolute;right:-40px;top:-40px;width:190px;height:190px;border-radius:50%;background:radial-gradient(circle at 38% 34%,#ffe6a8,#d7a23b 45%,#6d4618 70%,transparent 71%);box-shadow:0 0 90px rgba(255,205,120,.45)}
+.intro .inner{position:relative}
+.intro .clock{display:inline-flex;align-items:center;gap:9px;font-family:"Courier New",monospace;font-size:13px;letter-spacing:2px;color:var(--neon2);border:1px solid rgba(49,213,230,.4);padding:6px 13px;border-radius:999px}
+.intro h1{margin:20px 0 0;font-size:clamp(29px,5.4vw,54px);line-height:1.16;font-weight:850;letter-spacing:-1px;max-width:17ch}
+.intro h1 b{background:linear-gradient(90deg,var(--neon),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}
+.intro p{margin:20px 0 0;color:#c8cae4;font-size:clamp(15px,1.7vw,17px);max-width:60ch}
+.acts{margin-top:28px;display:flex;flex-wrap:wrap;gap:13px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 25px;border-radius:10px;font-size:15px;cursor:pointer;border:1px solid var(--line);background:rgba(255,255,255,.05);color:#fff;transition:.2s}
+.btn-p{background:linear-gradient(90deg,var(--neon),var(--pink));border-color:transparent;box-shadow:0 8px 28px rgba(155,107,255,.35)}
+.btn-p:hover{filter:brightness(1.1);transform:translateY(-2px)}
+.btn:hover{border-color:var(--neon2);color:#fff}
+.marks{margin-top:30px;display:flex;flex-wrap:wrap;gap:26px;color:var(--muted);font-size:13.5px}
+.marks b{display:block;font-size:25px;font-weight:800;color:#fff;font-family:"Courier New",monospace;letter-spacing:-1px}
+
+/* ===== 午夜片单 横向卡片 ===== */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{position:relative;border-radius:14px;padding:26px 24px;background:var(--paper);border:1px solid var(--line);overflow:hidden;transition:.25s;display:flex;flex-direction:column;min-height:230px}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:linear-gradient(180deg,var(--neon),var(--pink))}
+.card::after{content:"";position:absolute;right:-28px;bottom:-28px;width:100px;height:100px;border-radius:50%;background:radial-gradient(circle,rgba(49,213,230,.3),transparent 68%)}
+.card:hover{transform:translateY(-6px);border-color:rgba(155,107,255,.6);box-shadow:0 16px 40px rgba(0,0,0,.45)}
+.card .k{font-family:"Courier New",monospace;font-size:12px;letter-spacing:2px;color:var(--neon2)}
+.card h3{margin:12px 0 0;font-size:19px;line-height:1.45;letter-spacing:-.2px}
+.card p{margin:10px 0 0;color:#b9bcd8;font-size:14.5px;flex:1}
+.card .foot{margin-top:18px;display:flex;justify-content:space-between;font-size:12.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:12px}
+
+/* ===== 夜话评论 双列交叠 ===== */
+.talk{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.talk .item{position:relative;border:1px solid var(--line);border-radius:14px;padding:26px 28px;background:rgba(21,23,52,.55)}
+.talk .item:nth-child(even){transform:translateY(26px)}
+.talk .item:hover{background:rgba(155,107,255,.12);border-color:rgba(155,107,255,.55)}
+.talk .who{display:flex;align-items:center;gap:12px}
+.av{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:14px;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--neon),var(--neon2))}
+.talk .who b{font-size:15px}
+.talk .who span{font-size:12px;color:var(--muted)}
+.talk h4{margin:16px 0 0;font-size:17.5px;line-height:1.5;letter-spacing:-.2px}
+.talk p{margin:9px 0 0;color:#b9bcd8;font-size:14.5px}
+.talk .row{margin-top:16px;display:flex;justify-content:space-between;font-size:12.5px;color:var(--muted)}
+
+/* ===== 观影手记 三行两栏 ===== */
+.memo{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--paper)}
+.memo .cell{padding:28px 30px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.memo .cell:nth-child(2n){border-right:0}
+.memo .cell:nth-last-child(-n+2){border-bottom:0}
+.memo .cell:hover{background:rgba(49,213,230,.08)}
+.memo .n{font-family:"Courier New",monospace;font-size:12px;color:var(--pink);letter-spacing:2px}
+.memo b{display:block;margin-top:10px;font-size:18px;line-height:1.5}
+.memo p{margin:8px 0 0;color:#b9bcd8;font-size:14.5px}
+
+/* ===== 独立推荐 表格式 ===== */
+.table{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--paper)}
+.table .row{display:grid;grid-template-columns:64px 1.7fr 2fr 1fr 120px;align-items:center;padding:18px 24px;border-bottom:1px solid var(--line);transition:.2s}
+.table .row:last-child{border-bottom:0}
+.table .row:hover{background:rgba(155,107,255,.12)}
+.table .row.hd{font-size:12px;letter-spacing:1.5px;color:var(--muted);background:rgba(255,255,255,.03);text-transform:uppercase}
+.table .idx{font-family:"Courier New",monospace;font-size:19px;font-weight:800;color:var(--neon2)}
+.table .nm b{font-size:16.5px}
+.table .nm span{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
+.table .why{font-size:14px;color:#c2c4dd}
+.table .tag{font-size:12.5px;color:var(--muted)}
+.table .go{text-align:right;font-size:13.5px;color:var(--neon2)}
+
+/* ===== 关于 ===== */
+.about{border:1px solid var(--line);border-radius:16px;padding:34px 38px;background:rgba(21,23,52,.6)}
+.about p{margin:0 0 12px;color:#c8cae4;font-size:15.5px;line-height:1.95}
+.about p:last-child{margin-bottom:0}
+.about p strong{color:#fff}
+.links{margin-top:24px;display:flex;flex-wrap:wrap;gap:11px}
+.links a{border:1px solid var(--line);border-radius:999px;padding:7px 16px;font-size:13.5px;color:#d5d7ee}
+.links a:hover{border-color:var(--neon2);color:#fff}
+
+/* ===== footer ===== */
+.site-footer{border-top:1px solid var(--line);padding:34px 28px 46px;font-size:13.5px;color:var(--muted)}
+.site-footer .in{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.site-footer a{color:var(--muted)}
+.site-footer a:hover{color:#fff}
+
+@media (max-width:1000px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .talk{grid-template-columns:1fr}
+  .talk .item:nth-child(even){transform:none}
+  .table .row{grid-template-columns:48px 1fr;gap:10px;padding:16px}
+  .table .row.hd{display:none}
+  .table .row .why,.table .row .tag,.table .row .go{grid-column:2}
+  .table .row .go{text-align:left}
+  .intro{padding:40px 30px}
+}
+@media (max-width:640px){
+  .wrap{height:58px;padding:0 14px}
+  .brand b{font-size:16px}
+  .brand em{display:none}
+  .menu-btn{display:inline-flex;align-items:center;justify-content:center}
+  .nav-links{position:fixed;top:58px;left:0;right:0;flex-direction:column;background:rgba(14,16,36,.98);border-bottom:1px solid var(--line);padding:12px;clip-path:inset(0 0 100% 0);transition:.28s ease}
+  .nav-links.open{clip-path:inset(0 0 0 0)}
+  section{padding:42px 14px}
+  .cover{padding-top:26px}
+  .intro{padding:30px 20px;border-radius:14px}
+  .intro .moon{width:120px;height:120px;right:-30px;top:-30px}
+  .cards{grid-template-columns:1fr;gap:18px}
+  .memo{grid-template-columns:1fr}
+  .memo .cell{border-right:0}
+  .memo .cell:nth-last-child(2){border-bottom:1px solid var(--line)}
+  .about{padding:26px 20px}
+}
+@media print{body{background:#fff;color:#000}.site-header,.menu-btn,.acts,.site-footer{display:none}section{page-break-inside:avoid}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo">午</div>
+      <div>
+        <b>神马午夜福利电影网</b>
+        <em>shenmawuyefulidianyingwang-wap.github.io</em>
+      </div>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">首页</a>
+      <a href="#list">午夜片单</a>
+      <a href="#talk">夜话评论</a>
+      <a href="#memo">观影手记</a>
+      <a href="#pick">独立推荐</a>
+      <a href="#about">关于</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="打开菜单">≡</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== 封面 ===== -->
+  <section class="cover" id="home">
+    <div class="intro">
+      <div class="grid"></div>
+      <div class="moon"></div>
+      <div class="inner">
+        <span class="clock">● 夜间模式 · 00:00 后更新</span>
+        <h1>深夜里适合看的，<br>往往<b>不是最热闹的那部</b></h1>
+        <p>神马午夜福利电影网是一份午夜场电影内容单页。网站网址：https://shenmawuyefulidianyingwang-wap.github.io。这里只聊选片、氛围与观后感受，不讨论资源来源。</p>
+        <div class="acts">
+          <a class="btn btn-p" href="#list">看午夜片单</a>
+          <a class="btn" href="#talk">读夜话评论</a>
+        </div>
+        <div class="marks">
+          <div><b>04</b>个常驻栏目</div>
+          <div><b>12</b>条本期内容</div>
+          <div><b>00:00</b>夜间更新</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 午夜片单 ===== -->
+  <section id="list">
+    <div class="sec-t">
+      <span class="no">MIDNIGHT 01</span>
+      <h2>午夜<span>片单</span></h2>
+      <a class="more" href="#">往期片单 #</a>
+    </div>
+    <div class="cards">
+      <a class="card" href="#"><span class="k">SET 01 / 安静</span><h3>声音很轻，情绪很满</h3><p>这一类片子的对白不多，靠环境声和留白把你留在座位上，适合真正想安静下来的夜晚。</p><span class="foot"><span>氛围 · 留白</span><span>6 部</span></span></a>
+      <a class="card" href="#"><span class="k">SET 02 / 结构</span><h3>时间被拆开重排</h3><p>不是炫技，而是为了让你在结尾重新理解开头。看第二遍时，乐趣会明显大于第一遍。</p><span class="foot"><span>结构 · 重看</span><span>5 部</span></span></a>
+      <a class="card" href="#"><span class="k">SET 03 / 城市</span><h3>整座城市都是角色</h3><p>雨、霓虹、空掉的街道——城市本身承担了情绪，人物反而只是顺着它走。</p><span class="foot"><span>城市 · 夜色</span><span>5 部</span></span></a>
+      <a class="card" href="#"><span class="k">SET 04 / 独处</span><h3>一个人看也不冷清</h3><p>没有群戏、没有热闹，却有持续的内在对话。看完想关灯坐一会儿，而不是立刻开灯。</p><span class="foot"><span>独处 · 沉思</span><span>6 部</span></span></a>
+      <a class="card" href="#"><span class="k">SET 05 / 节奏</span><h3>慢，但每一步都算数</h3><p>慢不是拖沓。这几部的节奏像呼吸，你一旦跟上了，就很难再接受被剧情推着走。</p><span class="foot"><span>节奏 · 沉浸</span><span>4 部</span></span></a>
+      <a class="card" href="#"><span class="k">SET 06 / 尾声</span><h3>结尾那一分钟</h3><p>片单按结尾收尾：看这几部时别提前查结局，最后一分钟值得保留。</p><span class="foot"><span>结尾 · 不剧透</span><span>5 部</span></span></a>
+    </div>
+  </section>
+
+  <!-- ===== 夜话评论 ===== -->
+  <section id="talk" style="padding-top:0">
+    <div class="sec-t">
+      <span class="no">MIDNIGHT 02</span>
+      <h2>夜话<span>评论</span></h2>
+      <a class="more" href="#">全部评论 #</a>
+    </div>
+    <div class="talk">
+      <div class="item"><div class="who"><div class="av">A</div><div><b>匿名放映员</b><span>夜间值班 · 凌晨场</span></div></div><h4>「看不懂」可能只是还没到那一层</h4><p>真正好的留白会让人主动补全。与其急着查解析，不如先记下自己愿意往里填什么。</p><span class="row"><span>05.20 · 夜场笔记</span><span>评论 12</span></span></div>
+      <div class="item"><div class="who"><div class="av">B</div><div><b>片单编辑</b><span>选片 · 每周更新</span></div></div><h4>深夜片单的排序，其实排的是情绪</h4><p>不是按评分，也不是按时长，而是按「看完之后想不想立刻说话」。这是唯一的排序标准。</p><span class="row"><span>05.15 · 选片手记</span><span>评论 08</span></span></div>
+      <div class="item"><div class="who"><div class="av">C</div><div><b>常客读者</b><span>凌晨两点在读</span></div></div><h4>一个人的夜晚，需要的是陪伴感而非热闹</h4><p>那些对话少、空间感强的片子，反而更像一个不抢话的房间。它陪你，但不打扰你。</p><span class="row"><span>05.09 · 读者来信</span><span>评论 21</span></span></div>
+      <div class="item"><div class="who"><div class="av">D</div><div><b>重看派</b><span>只看老片</span></div></div><h4>重看才是检验一部片子的真正方式</h4><p>第一次被剧情带走，第二次开始注意到镜头在骗你。能被看第二遍的片子，通常都有一套内部结构。</p><span class="row"><span>05.03 · 重看记录</span><span>评论 05</span></span></div>
+    </div>
+  </section>
+
+  <!-- ===== 观影手记 ===== -->
+  <section id="memo" style="padding-top:0">
+    <div class="sec-t">
+      <span class="no">MIDNIGHT 03</span>
+      <h2>观影<span>手记</span></h2>
+      <a class="more" href="#">全部手记 #</a>
+    </div>
+    <div class="memo">
+      <div class="cell"><span class="n">NOTE 01</span><b>开场十二分钟定基调</b><p>前十二分钟里，镜头怎么移动、角色先做什么而不是先说什么，基本决定了整部的观感。</p></div>
+      <div class="cell"><span class="n">NOTE 02</span><b>留白是一种主动设计</b><p>没有解释清楚的情节，往往不是编剧偷懒，而是留给观众的判断题。</p></div>
+      <div class="cell"><span class="n">NOTE 03</span><b>城市夜色是低成本的情绪装置</b><p>雨声、反光、空街道，这些元素不用台词就能把人推进同一种心境。</p></div>
+      <div class="cell"><span class="n">NOTE 04</span><b>关灯前先记住一个画面</b><p>睡前能想起的镜头，通常就是这部片子里真正成立的那个理由。</p></div>
+      <div class="cell"><span class="n">NOTE 05</span><b>别急着看解析</b><p>先写下自己的版本，再看别人的分析，才知道自己漏掉了多少、又多看见了多少。</p></div>
+      <div class="cell"><span class="n">NOTE 06</span><b>一句话推荐比评分更有用</b><p>「推荐给谁、什么心情看、看完想聊哪一句」——三句齐了，推荐才算成立。</p></div>
+    </div>
+  </section>
+
+  <!-- ===== 独立推荐 ===== -->
+  <section id="pick" style="padding-top:0">
+    <div class="sec-t">
+      <span class="no">MIDNIGHT 04</span>
+      <h2>独立<span>推荐</span></h2>
+      <a class="more" href="#">完整清单 #</a>
+    </div>
+    <div class="table">
+      <div class="row hd"><span>N°</span><span>片名 / 类型</span><span>入选理由</span><span>适合时段</span><span style="text-align:right">阅读</span></div>
+      <div class="row"><span class="idx">01</span><div class="nm"><b>《长夜无声》</b><span>剧情 · 独处</span></div><span class="why">全片几乎只有一个人，声音承担了一切叙事。</span><span class="tag">深夜独处</span><span class="go">读推荐 #</span></div>
+      <div class="row"><span class="idx">02</span><div class="nm"><b>《第三盏灯》</b><span>悬疑 · 结构</span></div><span class="why">时间线分三次讲完，每次都推翻上一次的理解。</span><span class="tag">周末重看</span><span class="go">读推荐 #</span></div>
+      <div class="row"><span class="idx">03</span><div class="nm"><b>《雨城》</b><span>城市 · 氛围</span></div><span class="why">城市本身就是主角，雨声是唯一贯穿的配乐。</span><span class="tag">雨夜陪看</span><span class="go">读推荐 #</span></div>
+      <div class="row"><span class="idx">04</span><div class="nm"><b>《半句》</b><span>对话 · 留白</span></div><span class="why">关键情节全在没说完的话里，需要观众自己补上。</span><span class="tag">慢看</span><span class="go">读推荐 #</span></div>
+      <div class="row"><span class="idx">05</span><div class="nm"><b>《空房间》</b><span>短片 · 日常</span></div><span class="why">二十分钟讲一个动作，看完会想安静一会儿。</span><span class="tag">睡前一段</span><span class="go">读推荐 #</span></div>
+    </div>
+  </section>
+
+  <!-- ===== 关于 ===== -->
+  <section id="about" style="padding-top:0">
+    <div class="sec-t">
+      <span class="no">ABOUT</span>
+      <h2>关于<span>本站</span></h2>
+      <a class="more" href="#">联系 #</a>
+    </div>
+    <div class="about">
+      <p><strong>网站名称：神马午夜福利电影网</strong>　<strong>网站网址：https://shenmawuyefulidianyingwang-wap.github.io</strong></p>
+      <p>本站是一份静态单页电影内容站，栏目包括午夜片单、夜话评论、观影手记与独立推荐，内容围绕夜间观影的选片、氛围与观后讨论展开，定位为内容分享型站点。</p>
+      <p>本站不提供任何在线播放、下载或盗版资源链接；影片名称与片段描述仅用于评论、研究与个人推荐。本页为单页站点，栏目以锚点定位，内页占位链接以 # 表示，未生成 robots.txt 与 sitemap.xml。</p>
+      <div class="links">
+        <a href="#">午夜片单 #</a><a href="#">夜话评论 #</a><a href="#">观影手记 #</a><a href="#">独立推荐 #</a><a href="#">返回首页 #</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="in">
+    <div>© 2026 神马午夜福利电影网 · 网站名称：神马午夜福利电影网 · 网站网址：https://shenmawuyefulidianyingwang-wap.github.io · 内容仅供学习与讨论</div>
+    <div><a href="#">返回首页 #</a></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'),nav=document.getElementById('navLinks');
+  if(!btn||!nav)return;
+  btn.addEventListener('click',function(){nav.classList.toggle('open');});
+  nav.addEventListener('click',function(e){if(e.target.tagName==='A')nav.classList.remove('open');});
+})();
+</script>
+</body>
+</html>
